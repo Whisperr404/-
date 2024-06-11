@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Стартовая страница</title>
+</head>
+<body>
+  <header>
+    <h1>Добро пожаловать!</h1>
+  </header>
+  <style>
+  
+  body {
+      font-family: 'Arial', sans-serif; 
+      background-color: #f0f0f0; 
+      margin: 0; 
+      padding: 0; 
+    } 
+
+  header { 
+      background-color: #3D654E; 
+      color: #fff; 
+      padding: 20px 0; 
+      text-align: center; 
+  
+  }
+  
+  h1 {
+    color: #A7A377;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #A7A377;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+
+  h2 { 
+      background-color: #A7A377; 
+      color: #fff; 
+      padding: 20px; 
+      margin-bottom: 20px; 
+      border-radius: 8px; 
+    } 
+  
+  footer { 
+      background-color: #7FA4A1; 
+      color: #fff; 
+      padding: 10px 0; 
+      text-align: center; 
+      position: fixed; 
+      bottom: 0; 
+      width: 100%; 
+    } 
+
+  </style>
+  <main>
+    <section>
+      <h2>О проекте</h2>
+      <p>Это стартовая страница нашего нового проекта. Мы рады представить вам...</p>
+    </section>
+
+    <section>
+      <h2>Наши цели</h2>
+      <ul>
+        <li>Цель 1</li>
+        <li>Цель 2</li>
+        <li>Цель 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Команда</h2>
+      <p>Наша команда состоит из опытных специалистов, которые...</p>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Мой сайт</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Сотрудники компании</title> 
+  <style> 
+    table { 
+      border-collapse: collapse; 
+      width: 100%; 
+    } 
+ 
+    th, td { 
+      border: 1px solid black; 
+      padding: 8px; 
+      text-align: left; 
+    } 
+ 
+    th { 
+      background-color: #937D71; 
+    } 
+
+    td {
+      background-color: #C9B3A5;   
+    }
+  </style> 
+</head> 
+<body> 
+ 
+  <h1>Сотрудники компании</h1> 
+ 
+  <table> 
+    <thead> 
+      <tr> 
+        <th>Отдел</th> 
+        <th>Фамилия</th> 
+        <th>Имя</th> 
+        <th>Отчество</th> 
+        <th>Дата рождения</th> 
+      </tr> 
+    </thead> 
+    <tbody> 
+      <tr> 
+        <td rowspan="3">Отдел продаж</td> 
+        <td>Фамилия</td> 
+        <td>Имя</td> 
+        <td>Отчество</td> 
+        <td>Дата</td> 
+      </tr> 
+      <tr> 
+        <td>Фамилия</td> 
+        <td>Имя</td> 
+        <td>Отчество</td> 
+        <td>Дата</td> 
+      </tr> 
+      <tr> 
+        <td>Фамилия</td> 
+        <td>Имя</td> 
+        <td>Отчество</td> 
+        <td>Дата</td> 
+      </tr> 
+      <tr> 
+        <td rowspan="2">Отдел маркетинга</td> 
+        <td>Фамилия</td> 
+        <td>Имя</td> 
+        <td>Отчество</td> 
+        <td>Дата</td> 
+      </tr> 
+      <tr> 
+        <td>Фамилия</td> 
+        <td>Имя</td> 
+        <td>Отчество</td> 
+        <td>Дата</td> 
+      </tr> 
+    </tbody> 
+  </table> 
+ 
+</body> 
+</html>
