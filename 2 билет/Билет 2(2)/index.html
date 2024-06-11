@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Проверка переменной a</title>
+</head>
+<body>
+<h1>Проверка переменной a</h1>
+<label for="value">Введите значение для переменной a: </label>
+<input type="text" id="value">
+<button onclick="checkValue()">Проверить</button>
+<p id="result"></p>
+
+<script>
+function checkValue() {
+  var userInput = document.getElementById("value").value;
+  var a = parseInt(userInput);
+
+  if (a === 10) {
+    document.getElementById("result").innerHTML = "Верно";
+  } else {
+    document.getElementById("result").innerHTML = "Неверно";
+  }
+}
+</script>
+</body>
+</html>
+

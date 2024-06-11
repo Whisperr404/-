@@ -1,0 +1,14 @@
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    background-image: url("Фото/Фото1.jpg");
+  
+    height: 100%;
+  
+    /* Центр и масштабирование изображения */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

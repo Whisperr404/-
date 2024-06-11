@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета музыканта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Анкета музыканта</h1>
+        <form id="musicianForm">
+            <!-- Личные данные -->
+            <div class="form-section">
+                <h2>Личные данные</h2>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <!-- Выбор стиля музыки -->
+            <div class="form-section">
+                <h2>Выберите стиль музыки</h2>
+                <div>
+                    <input type="radio" id="rock" name="music-style" value="rock" required>
+                    <label for="rock">Рок</label>
+                </div>
+                <div>
+                    <input type="radio" id="jazz" name="music-style" value="jazz" required>
+                    <label for="jazz">Джаз</label>
+                </div>
+                <div>
+                    <input type="radio" id="pop" name="music-style" value="pop" required>
+                    <label for="pop">Поп</label>
+                </div>
+                <div>
+                    <input type="radio" id="classical" name="music-style" value="classical" required>
+                    <label for="classical">Классическая</label>
+                </div>
+            </div>
+
+            <!-- Выбор инструмента -->
+            <div class="form-section">
+                <h2>Выберите инструмент</h2>
+                <div>
+                    <input type="checkbox" id="guitar" name="instrument" value="guitar">
+                    <label for="guitar">Гитара</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="piano" name="instrument" value="piano">
+                    <label for="piano">Пианино</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="drums" name="instrument" value="drums">
+                    <label for="drums">Барабаны</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="violin" name="instrument" value="violin">
+                    <label for="violin">Скрипка</label>
+                </div>
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <!-- Модальное окно -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Анкета успешно отправлена! Спасибо за участие.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('musicianForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Останавливаем стандартное поведение формы
+            
+            // Показать модальное окно
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            
+            // Скрыть модальное окно при клике на <span> (x)
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            // Скрыть модальное окно при клике вне окна
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            // Сбросить форму после отправки
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Эффект бабочки</title>
+</head>
+<body>
+    <header>
+        <h1>Эффект бабочки</h1>
+        <p>Эффект бабочки: Как маленькие изменения могут привести к крупным последствиям</p>
+    </header>
+    <article>
+        <h2>Эффект бабочки</h2>
+
+        <p> </p>
+        
+        <p> </p>
+        
+        <p> </p>
+        
+        <p> </p>
+        
+        <p>Интересные факты</p>
+    <ol>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+    </ol>
+    </article>
+    <footer>
+        <p>2024 Эффект бабочки. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+CSS:
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #46A0A0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #46A0A0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
